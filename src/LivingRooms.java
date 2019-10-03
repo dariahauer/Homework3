@@ -1,22 +1,11 @@
 public class LivingRooms {
     public static void main(String[] args) {
-        Couch couch1 = new Couch();
-        couch1.livingRomNumber=1;
-        couch1.name = "Sofia";
-        couch1.colour="green";
-        couch1.armchair = new Armchair();
-        couch1.armchair.quantity=2;
-        couch1.armchair.colour="greeen";
-        couch1.armchair.quantity=2;
+        Armchair armchair1 = new Armchair(2, "green");
+        Couch couch1 = new Couch(1, "Sofia", "green", armchair1);
 
+        Armchair armchair2 = new Armchair(1, "blue");
+        Couch couch2 = new Couch(2, "Elena", "blue", armchair2);
 
-        Couch couch2 = new Couch();
-        couch2.livingRomNumber=2;
-        couch2.name="Elena";
-        couch2.colour="blue";
-        couch2.armchair = new Armchair();
-        couch2.armchair.quantity=1;
-        couch2.armchair.colour="blue";
 
         System.out.println("Living Room nr: " + couch1.livingRomNumber + " ," + "Couch Name: " + couch1.name + " ," + "Colour: " + couch1.colour + " ,"
                 + " ," + "Armchair quantity: " + couch1.armchair.quantity + " ," + "Armchair colour: " + couch1.armchair.colour);
