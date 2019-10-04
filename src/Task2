@@ -10,7 +10,7 @@ Każda zmienna musi mieć deklarację typu zmiennej (warości) np. int albo Stri
 
 Jeżeli deklarację zmiennej poprzedzimy słowem final , to będzie mogła być zainicjowana tylko raz;
 
-W klasie mogą się znajdować  obiekty, metody  i konstruktory.
+W klasie mogą się znajdować  referencje, metody  i konstruktory.
 
 Konstruktory są wywoływane przez operator "new" i służą do tworzenia nowych obiektów.
 
@@ -21,7 +21,7 @@ Zakładając, że istnieje klasa Car, to przy zapisie:
 Car car1 = new Car(„BMW”, „M5”, 2007, 2.6);
 Car car2 = car1;​
 
-car1 i car2 to dwie wartości klasy wskazujące na ten sam obiekt/kontener z przypisanymi wartościami;
+car1 i car2 to dwie referencje wskazujące na ten sam obiekt;
 
 
 
